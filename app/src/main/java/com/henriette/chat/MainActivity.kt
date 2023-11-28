@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         webView.webViewClient = WebViewClient()
         webView.webChromeClient = WebChromeClient()
         webView.settings.javaScriptEnabled = true
+        webView.settings.domStorageEnabled = true
 
         // Load your Botpress chatbot URL
         webView.loadUrl("https://mediafiles.botpress.cloud/7667cedd-4464-4afc-8420-9c0b1c7b993a/webchat/bot.html")
